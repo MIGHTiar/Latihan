@@ -11,6 +11,12 @@ body {
     color: #fff;
 }
 
+.container {
+    width: 1280px;
+    max-width: 100%;
+    padding: 20px;
+}
+
 /* Header */
 header {
     background-color: hsl(217, 28%, 15%);
@@ -18,7 +24,7 @@ header {
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-bottom: 210px;
+    padding-bottom: 190px;
 }
 
 img {
@@ -35,11 +41,21 @@ img {
 }
 
 h1,
+h3,
 h4,
 h5,
 h6,
 button {
     font-family: 'Raleway';
+}
+
+h6 {
+    margin: 0;
+    opacity: 70%;
+}
+
+p {
+    line-height: 1.8;
 }
 
 /* Navigation Bar */
@@ -73,9 +89,81 @@ nav {
     line-height: 1.7;
 }
 
+/* Feature */
+.feature {
+    margin: 50px;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Productive */
+.productive {
+    display: flex;
+    margin: 150px 100px;
+}
+
+.product-img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.product-text {
+    margin: auto 50px auto;
+    padding-right: 70px;
+    line-height: 1.7;
+}
+
+.product-text a {
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding-bottom: 5px;
+}
+
+.product-text h1 {
+    line-height: 1.4;
+}
+
 /* Testimonial */
 .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    }
+
+    .testimonial {
     background-color: hsl(219, 30%, 18%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 2);
+    flex: 1;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 35px 30px 25px;
+    line-height: 1.7;
+    min-width: 350px;
+    }
+
+    .testimonial .user {
+        display: flex;
+        align-items: center;
+    }
+
+    .user h5 {
+        margin: 0;
+    }
+
+    .testimonial .user img {
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
 }
 
 /* SignUp */
@@ -84,3 +172,4 @@ nav {
 footer {
     background-color: hsl(216, 53%, 9%);
 }
+@media (max-width: 750px) {}
