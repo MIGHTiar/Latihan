@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(218, 28%, 13%);
+    font-family: 'Open Sans';
+    font-style: 14px;
+    color: #fff;
+}
+
+.container {
+    width: 1440px;
+    max-width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: hsl(217, 28%, 15%);
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 150px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    border-radius: 50px;
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    padding: 15px 60px;
+    border: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: 'Raleway';
+}
+
+h6 {
+    margin: 0;
+    opacity: 70%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px 20px;
+}
+
+.nav-ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
+
+/* Intro */
+.intro {
+    margin: 50px auto;
+    width: 600px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.intro p {
+    line-height: 1.7;
+}
+
+/* Feature */
+.feature {
+    margin: 50px;
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Productive */
+.productive {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 130px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-img {
+    object-fit: contain;
+    padding-left: 50px;
+}
+
+.product-text {
+    flex: 1;
+    margin: auto 50px auto;
+    line-height: 1.7;
+}
+
+.product-text a {
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding-bottom: 5px;
+}
+
+.product-text h1 {
+    line-height: 1.4;
+}
+
+/* Testimonial */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    background-image: url(./images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: 32px -2px;
+}
+
+.testimonial {
+    background-color: hsl(219, 30%, 18%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    flex: 1;
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 25px 30px;
+    line-height: 1.7;
+    min-width: 350px;
+}
+
+.testimonial .user {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.user h5 {
+    margin: 0;
+}
+
+.testimonial .user img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+/* SignUp */
+form {
+    background-color: hsl(217, 28%, 15%);
+    margin: 100px auto -140px;
+    padding: 50px 150px 20px;
+    width: 1080px;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.form-control {
+    padding: 20px;
+}
+
+.form-control input {
+    margin: 20px 35px 20px 0;
+}
+
+input {
+    padding: 14px 100px;
+    border-radius: 50px;
+    border-style: none;
+}
+
+/* Footer */
+footer {
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 220px;
+    }
+
+    footer .logo {
+        width: auto;
+        margin-left: 40px 0 0 45px;
+    }
+
+    footer .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    footer .flex {
+        display: flex;
+        flex: 1;
+    }
+
+    .grid ul li {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .loc {
+        display: flex;
+        line-height: 2;
+    }
+
+    .ico {
+        width: 90px;
+        padding-right: 25px;
+        margin-top: 8px;
+    }
+
+    .links {
+        line-height: 3;
+    }
+
+    .social-icons {
+        padding-top: 30px;
+        margin-left: 30px;
+    }
+
+    .social-icons a {
+        display: inline-block;
+        border: 1px solid #fff;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        padding: 7px;
+        margin-left: 15px;
+    }
+
+    .social-icons .fa-facebook-f {
+        padding-left: 4px;
+}
+.social-icons .fa-twitter,
+.fa-instagram {
+    padding-left: 2px;
+}
+
+@media screen and (width: 375px) {
+
+    .logo {
+        width: 100px;
+        margin: 0 5px;
+    }
+
+    nav,
+    .container {
+        margin: 0 5px;
+        padding: 0;
+    }
+
+    img {
+        width: fit-content;
+    }
+
+    .product-img {
+        padding: auto;
+    }
+
+}
