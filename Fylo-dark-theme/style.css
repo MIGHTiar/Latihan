@@ -78,12 +78,29 @@ nav {
     padding: 30px;
 }
 
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
 /* Intro */
 .intro {
     margin: 50px auto;
     width: 600px;
     max-width: 100%;
     text-align: center;
+}
+
+.intro img {
+    padding: 15px;
 }
 
 .intro p {
@@ -179,7 +196,8 @@ form {
     background-color: hsl(217, 28%, 15%);
     margin: 100px auto -140px;
     padding: 50px 150px 20px;
-    width: 1080px;
+    max-width: 1080px;
+    width: auto;
     text-align: center;
     border-radius: 20px;
     z-index: 1;
@@ -208,7 +226,7 @@ footer {
 
     footer .logo {
         width: auto;
-        margin-left: 40px 0 0 45px;
+        margin: 40px 0 0 45px;
     }
 
     footer .container {
@@ -225,6 +243,13 @@ footer {
     .grid ul li {
         text-decoration: none;
         list-style-type: none;
+        display: flex;
+        }
+
+        .grid ul img {
+            width: 25px;
+            height: 25px;
+            margin-top: 10px;
     }
 
     .loc {
@@ -232,14 +257,20 @@ footer {
         line-height: 2;
     }
 
-    .ico {
-        width: 90px;
-        padding-right: 25px;
-        margin-top: 8px;
+    .loc img {
+        margin-left: 8px;
+    }
+
+    .loc p {
+        margin: 12px 25px;
     }
 
     .links {
         line-height: 3;
+    }
+
+    .links p {
+        margin: 12px 25px;
     }
 
     .social-icons {
@@ -266,15 +297,22 @@ footer {
     padding-left: 2px;
 }
 
-@media screen and (width: 375px) {
+@media screen and (max-width: 700px) {
+
+    .nav-ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
 
     .logo {
         width: 100px;
         margin: 0 5px;
     }
 
-    nav,
-    .container {
+    nav {
         margin: 0 5px;
         padding: 0;
     }
@@ -283,8 +321,38 @@ footer {
         width: fit-content;
     }
 
-    .product-img {
+    .productive .product-img {
+        margin: 10px auto 25px;
         padding: auto;
     }
 
+    form,
+    button {
+        padding: 5px 20px;
+        margin: 70px 25px;
+    }
+
+    .form-control input {
+        max-width: 100%;
+        width: fit-content;
+        margin: 15px auto;
+    }
+
+    footer {
+        width: 100%;
+        margin: 20px auto;
+        padding-top: 15px;
+        display: grid;
+    }
+
+    footer .container {
+        display: block;
+        width: auto;
+        margin: 0;
+    }
+
+    footer .flex {
+        display: flex;
+        flex-flow: column;
+    }
 }
