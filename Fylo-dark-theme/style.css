@@ -28,6 +28,10 @@ header {
     padding-bottom: 150px;
 }
 
+.logo {
+    width: 150px;
+}
+
 img {
     max-width: 100%;
 }
@@ -99,17 +103,16 @@ nav {
     text-align: center;
 }
 
+.intro p,
+.intro h1,
 .intro img {
-    padding: 15px;
-}
-
-.intro p {
     line-height: 1.7;
+    padding: 0 10px;
 }
 
 /* Feature */
 .feature {
-    margin: 50px;
+    margin: 40px auto;
     width: 500px;
     max-width: 100%;
     text-align: center;
@@ -179,11 +182,6 @@ nav {
     align-items: center;
     padding-top: 5px;
 }
-
-.user h5 {
-    margin: 0;
-}
-
 .testimonial .user img {
     border-radius: 50%;
     margin-right: 10px;
@@ -191,15 +189,18 @@ nav {
     height: 35px;
 }
 
+.user h5 {
+    margin: 0;
+}
 /* SignUp */
 form {
     background-color: hsl(217, 28%, 15%);
     margin: 100px auto -140px;
-    padding: 50px 150px 20px;
+    padding: 50px 100px 20px;
     max-width: 1080px;
     width: auto;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 10px;
     z-index: 1;
     position: relative;
 }
@@ -209,13 +210,16 @@ form {
 }
 
 .form-control input {
-    margin: 20px 35px 20px 0;
+    margin: 20px 25px;
 }
 
 input {
-    padding: 14px 100px;
+    padding: 14px 60px;
     border-radius: 50px;
     border-style: none;
+    min-width: 245px;
+    width: 500px;
+    max-width: 800px;
 }
 
 /* Footer */
@@ -231,7 +235,7 @@ footer {
 
     footer .container {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: auto auto auto auto auto;
         grid-gap: 50px;
     }
 
@@ -274,8 +278,8 @@ footer {
     }
 
     .social-icons {
+        text-align: center;
         padding-top: 30px;
-        margin-left: 30px;
     }
 
     .social-icons a {
@@ -289,15 +293,111 @@ footer {
         margin-left: 15px;
     }
 
-    .social-icons .fa-facebook-f {
-        padding-left: 4px;
-}
-.social-icons .fa-twitter,
-.fa-instagram {
-    padding-left: 2px;
+@media screen and (max-width: 375px) {
+
+    .nav-ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .container {
+        width: 375px;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100px;
+        margin: 0;
+    }
+
+    header .btn {
+        margin: 0 30px;
+    }
+
+    .intro img,
+    .feature,
+    .product-img {
+        padding: 0 10px;
+    }
+
+    .productive {
+        margin: 80px auto;
+    }
+
+    .product-text {
+        margin: 0 20px;
+    }
+
+    .testimonials {
+        background-position: 15px -10px;
+    }
+
+    .testimonial {
+        margin: 10px 0;
+        padding: 20px 25px;
+    }
+
+    form {
+        margin: 20px 20px -200px;
+        padding: 20px;
+    }
+
+    form .btn {
+        padding: 15px 10px;
+        margin: 0;
+    }
+
+    .form-control {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .form-control input {
+        margin: 20px 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .btn {
+        width: -moz-available;
+    }
+
+    footer {
+        margin: -200px auto;
+        display: grid;
+        padding-top: 50px;
+    }
+
+    footer .container {
+        display: block;
+        width: auto;
+        margin: 0;
+    }
+footer .logo {
+    margin: 230px 0 0 45px;
 }
 
-@media screen and (max-width: 700px) {
+footer .flex {
+    display: flex;
+    flex-flow: column;
+}
+
+.loc img {
+    margin: 0;
+}
+
+.social-icons {
+    padding-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 376px) and (max-width: 720px) {
 
     .nav-ul {
         display: none;
@@ -308,7 +408,7 @@ footer {
     }
 
     .logo {
-        width: 100px;
+        width: 130px;
         margin: 0 5px;
     }
 
@@ -323,18 +423,96 @@ footer {
 
     .productive .product-img {
         margin: 10px auto 25px;
-        padding: auto;
+        padding: 0;
     }
 
-    form,
+    .product-text {
+        margin: auto 20px auto;
+    }
+
+    .testimonials {
+        flex-flow: column;
+    }
+
+    form {
+        margin: 20px 30px -200px;
+    }
+
     button {
         padding: 5px 20px;
-        margin: 70px 25px;
     }
 
     .form-control input {
         max-width: 100%;
-        width: fit-content;
+        width: -moz-available;
+        margin: 15px auto;
+        }
+
+        footer {
+            width: 100%;
+            margin: 20px auto;
+            padding-top: 15px;
+            display: grid;
+        }
+
+        footer .container {
+            display: block;
+            width: auto;
+            margin: 0;
+        }
+
+        footer .logo {
+            margin: 230px 0 0 45px;
+        }
+
+        footer .flex {
+            display: flex;
+            flex-flow: column;
+        }
+        }
+
+        @media screen and (min-width: 721px) and (max-width: 1209px) {
+
+
+            .logo {
+                width: 130px;
+                margin: 15px;
+            }
+
+            nav {
+                margin: 0 5px;
+                padding: 0;
+            }
+
+            img {
+    width: fit-content;
+    }
+
+    .productive .product-img {
+        margin: 10px auto 25px;
+        padding: 0;
+    }
+
+    .product-text {
+        margin: auto 20px auto;
+    }
+
+    .testimonials {
+        flex-flow: column;
+    }
+
+    form {
+        margin: 20px 30px -200px;
+    }
+
+    button {
+        padding: 5px 20px;
+        /* margin: 70px 25px; */
+    }
+
+    .form-control input {
+        max-width: 100%;
+        width: -moz-available;
         margin: 15px auto;
     }
 
@@ -349,6 +527,10 @@ footer {
         display: block;
         width: auto;
         margin: 0;
+    }
+
+    footer .logo {
+        margin: 230px 0 0 45px;
     }
 
     footer .flex {
